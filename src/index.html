@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Card Validation</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Card Validation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <h1 class="titulo">Welcome to DinoBank🦕 </h1>
+  </header>
+
+  <main class="main">
+    <section class="container">
+     
+        <form id="form">  
+          <h2>Let's avoid Credit card scams! <br> DinoHelper will assist you with checking if the card account already exists
+          </h2>
+          <h3>Please give him more details : </h3>        
+        <input type="text" id="clientName" placeholder="Name in the card" maxlength="25" autocomplete="off" required>
+        <input type="password" id="NumberCard" placeholder="Write here the card number" maxlength="16" autocomplete="off" required>
+        <i class="fa fa-eye" aria-hidden="true" id="eye"></i> 
+
+        <div class="button">
+          <button class="validate" id="validate"><a class="buttonValidate"> Validate </a></button>
+        </div>
+        </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <span>Copyright &copy;
+      <script type="text/javascript">
+        let currentDate = new Date()
+        document.write(currentDate.getFullYear())
+      </script>
+      DinoBank🦕. All rights reserved.
+    </span>
+  </footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
