@@ -2,21 +2,30 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    
 }
 
 /*------header----*/
 .header{
     width: 100%;
-    padding: 10px 40px 10px 40px;
-    background-color: #46718da1;
+    padding:20 40px 10px 40px;
+    background-color: #52857ebd;
+    /* background-color: #3c6956bb; */
+    /* background-color: rgba(26, 25, 25, 0.87); */
+    font-family: 'Courier New', Courier, monospace;
+   
+   
+    
 }
 
-.header .titulo{
+.header .title{
     color: #ffffff;
-    font-family: cursive;
-    font-weight: 400;
-    text-align: center
+    font-weight: 700;
+    text-align:center;
 }
+
+
+
 
 .main{
     width: 100%;
@@ -26,13 +35,23 @@
     
     justify-content: center;
     align-items: center;
-    margin-top:200px;
-    text-align: center;
-
+    margin-top:100px;
   
-   
+  
 }
-
+.yoshi-coin{
+  
+    text-align: center;
+    max-height: 35px;
+    margin:auto;
+}
+#yoshi-gif-coin{
+  
+    text-align: center;
+    max-height: 50px;
+    margin:auto;
+}
+/*---- form style---- */
 #form{
     display:flex ;
     flex-direction:column;
@@ -41,14 +60,166 @@
     margin:auto;
 }
 
+#form > h2 , p {
+    font-family:'Poppins', sans-serif;
+}
+/*---- credit card style------ */
+.container > .containerTarjeta{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.tarjeta{
+    max-width: 340px;
+    border-radius: 10px;
+    background-image: url(https://i.pinimg.com/originals/3e/02/17/3e0217133b15697409966578e14b3ef2.jpg);
+    /* background-image: url(https://i.pinimg.com/originals/83/51/d6/8351d6964ff6c81e9bd782488affb1f4.gif); */
+    /* background-image: url(https://i.makeagif.com/media/1-31-2018/6JY7Et.gif); */
+    background-size: cover;
+    padding: 25px;
+    box-shadow: -10px 10px 8px rgba(0,0,0,0.3);
+    z-index: 1;
+    margin:auto;
+}
+.tarjeta > div{
+    margin-bottom: 5px;
+}
+.tarjeta .title-card{
+    width:100%;
+    text-align: left;
+    color: #e025257c;
+    font-size: 19px;
+    font-weight:700;
+    font-family:  cursive;
+}
+.tarjeta .chip-card{
+    width: 100%;
+}
+.tarjeta .chip-card >img{
+    width: 44px;
+    height: 34px;
+}
+.tarjeta .number-card > span{
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+.tarjeta .number-card > .number-name,
+.tarjeta .flex-name .name-card .name-name,
+.tarjeta .flex-name .date-card .date-name{
+    color: #2c2b2cbe;
+}
+ #numberInput,
+ #nameInput,
+ #exp-dateInput{
+    color: #000000;
+    outline: none;
+    border: none;
+    border-radius:5px;
+    line-height: 25px;
+    background-color:#ffffffc0;
+    
+}
 
-/*------footer----*/
+#eye{
+    background-color: #50aa5577;
+    line-height:25px;
+    outline: none;
+    border: none;
+    border-radius:5px;
+     color: #1a0c0c;
+     cursor: pointer;
+}
+
+#eye:hover{
+    background-color: #c9e7418f;
+    line-height:25px;
+    outline: none;
+    border: none;
+    border-radius:5px;
+    color: #1a0c0c;
+    transform: scale(1.090);
+}
+
+.tarjeta .flex-name{
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    
+}
+.tarjeta .flex-name >div{
+    justify-content: space-between;
+}
+.tarjeta .flex-name .name-card{
+    width: 260px;
+}
+.tarjeta .flex-name .name-card .name-name{
+    display: block;
+}
+
+.date-card{
+    margin-left: 10px;
+}
+.date-card> span{
+    text-align: left;
+    width: 80px;
+    display: block;
+}
+
+#exp-dateInput{
+    text-align: left;
+    width: 50px;
+}
+.tarjeta .logo {
+    width: 100%;
+    text-align: end;
+    padding-top: 30px;
+}
+.tarjeta .logo >img{
+    width: 50px;
+    height: 30px
+}
+
+ /*------buttonValidate--------*/
+.button{
+    text-align:center;
+    padding-top: 50px;
+    width: 100%;
+}
+.validate{
+    cursor: pointer;
+    line-height: 30px;
+    width:60%;
+    margin:auto;
+    overflow: unset;
+    border:none;
+    /* background-color:#50aa5577 ; */
+    background-color:rgba(12, 12, 12, 0.842) ;
+    color: white;
+    border-radius: 25px;
+}
+
+.validate:hover{
+    background-color:rgba(20, 97, 5, 0.466);
+    border-radius: 25px;
+    cursor: pointer;
+    line-height: 30px;
+    width:60%;
+    margin:auto;
+    overflow: unset;
+    border:none;
+    color: white;
+    transform: scale(1.20);
+}
+
+/*------footer--------*/
 .footer{
     width: 100%;
     position: fixed;
     left: 0;
     bottom: 0;
-    background-color: #0d1321f3;
+    background-color: #2a2a2bf3;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     padding: 30px;
