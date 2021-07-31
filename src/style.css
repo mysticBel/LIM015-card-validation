@@ -71,7 +71,7 @@
     justify-content: center;
     align-items: center;
 }
-.tarjeta{
+.card{
     max-width: 340px;
     border-radius: 10px;
     background-image: url(https://i.pinimg.com/originals/3e/02/17/3e0217133b15697409966578e14b3ef2.jpg);
@@ -83,10 +83,10 @@
     z-index: 1;
     margin:auto;
 }
-.tarjeta > div{
+.card > div{
     margin-bottom: 5px;
 }
-.tarjeta .title-card{
+.card .title-card{
     width:100%;
     text-align: left;
     color: #e025257c;
@@ -94,21 +94,21 @@
     font-weight:700;
     font-family:  cursive;
 }
-.tarjeta .chip-card{
+.card .chip-card{
     width: 100%;
 }
-.tarjeta .chip-card >img{
+.card .chip-card >img{
     width: 44px;
     height: 34px;
 }
-.tarjeta .number-card > span{
+.card .number-card > span{
     display: block;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
 }
-.tarjeta .number-card > .number-name,
-.tarjeta .flex-name .name-card .name-name,
-.tarjeta .flex-name .date-card .date-name{
+.card .number-card > .number-name,
+.card .flex-name .name-card .name-name,
+.card .flex-name .date-card .date-name{
     color: #2c2b2cbe;
 }
  #numberInput,
@@ -143,19 +143,19 @@
     transform: scale(1.090);
 }
 
-.tarjeta .flex-name{
+.card .flex-name{
     display: flex;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     
 }
-.tarjeta .flex-name >div{
+.card .flex-name >div{
     justify-content: space-between;
 }
-.tarjeta .flex-name .name-card{
+.card .flex-name .name-card{
     width: 260px;
 }
-.tarjeta .flex-name .name-card .name-name{
+.card .flex-name .name-card .name-name{
     display: block;
 }
 
@@ -172,12 +172,12 @@
     text-align: left;
     width: 50px;
 }
-.tarjeta .logo {
+.card .logo {
     width: 100%;
     text-align: end;
     padding-top: 30px;
 }
-.tarjeta .logo >img{
+.card .logo >img{
     width: 50px;
     height: 30px
 }
