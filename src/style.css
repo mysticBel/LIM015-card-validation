@@ -9,10 +9,11 @@
 .header{
     width: 100%;
     padding:20 40px 10px 40px;
-    background-color: #52857ebd;
+    /* background-color: #52857ebd; */
     /* background-color: #3c6956bb; */
     /* background-color: rgba(26, 25, 25, 0.87); */
     font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to  right,#9becc4e3  ,#116e68f1 ); 
    
    
     
@@ -64,7 +65,7 @@
     font-family:'Poppins', sans-serif;
 }
 /*---- credit card style------ */
-.container > .containerTarjeta{
+.container > .container-card{
     display: flex;
     position: relative;
     justify-content: center;
@@ -198,10 +199,12 @@
     background-color:rgba(12, 12, 12, 0.842) ;
     color: white;
     border-radius: 25px;
+    background: linear-gradient(to  right,#9becc4e3  ,#036b64a8 ); 
 }
 
 .validate:hover{
     background-color:rgba(20, 97, 5, 0.466);
+    background: linear-gradient(to  right,#9becc394  ,#116e689f ); 
     border-radius: 25px;
     cursor: pointer;
     line-height: 30px;
@@ -211,6 +214,7 @@
     border:none;
     color: white;
     transform: scale(1.20);
+
 }
 
 /*------footer--------*/
